@@ -1,0 +1,7 @@
+.h1--cursor {
+  cursor: pointer;
+}
+
+.header--detail {
+  justify-content: space-between;
+}

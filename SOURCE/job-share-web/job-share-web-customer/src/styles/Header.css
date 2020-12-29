@@ -1,0 +1,22 @@
+.header{
+  width: 80%;
+  margin: auto;
+}
+.nav__title{
+  background-color: #212f3f;
+  color: white;
+  padding-top: 5px;
+  vertical-align: middle;
+  font-size: 17px;
+  font-weight: 400;
+}
+.nav__title:hover{
+  background-color: #333;
+  cursor: pointer;
+}
+@media only screen and (max-width:991px){
+  .header{
+    width: 100%;
+    margin: auto;
+  }
+}

@@ -1,0 +1,72 @@
+.me-logo {
+  justify-content: initial;
+}
+
+.me-txt-logo {
+  color: white;
+  margin-left: -50px;
+}
+
+.nav-icon {
+  margin-right: 1rem !important;
+}
+
+.me-delete {
+  display: none;
+  margin-top: 8px;
+  margin-left: 50px;
+  color: #ced4da;
+  font-size: 15px;
+  float: right;
+  justify-content: initial;
+}
+
+.nav .nav-item {
+  margin-bottom: 0.25rem;
+}
+
+.sidebar .nav-link > p > .nav--icon--item {
+  position: absolute;
+  right: 1rem;
+  top: 0.7rem;
+}
+
+.nav__active--link {
+  border-left: 2px solid red;
+  color: #1ac4e9;
+  background-color: rgb(73, 131, 160) !important;
+  border-radius: 4px;
+  color: white;
+}
+
+.nav-link-hover {
+  margin-bottom: 0px !important;
+}
+
+.main-sidebar {
+  background-color: rgb(41, 53, 80);
+  /* background-color: #404e68; */
+  /* background: linear-gradient(167deg, rgba(2, 0, 36) 20%, rgba(53, 64, 87, 1) 60%, rgba(0, 212, 255, 1) 140%);  */
+}
+
+@media (max-width: 990px) {
+  .me-delete {
+    display: inline;
+    margin-left: -100px;
+  }
+}
+
+[class*='sidebar-dark-'] .nav-sidebar > .nav-item.menu-open > .nav-link,
+[class*='sidebar-dark-'] .nav-sidebar > .nav-item:hover > .nav-link,
+[class*='sidebar-dark-'] .nav-sidebar > .nav-item > .nav-link:focus {
+  color: #1ac4e9;
+}
+
+.hoved:hover {
+  border-radius: 5px;
+  border-left: 2px solid red;
+}
+
+.me-txt-menu {
+  font-size: 15px;
+}

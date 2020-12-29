@@ -1,0 +1,100 @@
+.ctn-icon {
+  position: absolute;
+  left: 16px;
+  top: 7px;
+  font-size: 18px;
+  color: #808080;
+  z-index: 1;
+}
+
+.css-1pahdxg-control {
+  padding-left: 30px;
+  height: 40px;
+  border-radius: 0 !important;
+  border-color: none;
+}
+
+.css-yk16xz-control {
+  height: 40px;
+  border-radius: 0 !important;
+  padding-left: 30px;
+  box-shadow: none !important;
+  border-color: none !important;
+}
+
+@media only screen and (max-width: 991px) {
+  .btn--search {
+    margin-top: 5px !important;
+    height: 40px !important;
+  }
+  .btn--search1 {
+    margin-top: 10px !important;
+    height: 40px !important;
+  }
+}
+
+.box-white {
+  background-color: #fff;
+}
+
+.search-meta {
+  margin: 5px 0;
+}
+#box-result .meta-count {
+  color: #4d4d4d;
+  font-size: 15px;
+  line-height: 35px;
+}
+#box-result .meta-count span {
+  font-size: 15px;
+}
+
+/* pagination css */
+.pagination {
+  margin: 15px auto;
+  display: flex;
+  list-style: none;
+  outline: none;
+}
+.pagination > .active > a {
+  border-radius: 50%;
+  margin: 10px;
+  padding: 5px 10px;
+  font-weight: bold;
+  color: white !important;
+}
+.pagination > li > a {
+  padding: 5px 10px;
+  outline: none;
+  cursor: pointer;
+}
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  background-color: #199dfd;
+  border-color: #47ccde;
+  outline: none;
+}
+.pagination > li > a,
+.pagination > li > span {
+  color: #47ccde;
+}
+.pagination > li:first-child > a,
+.pagination > li:first-child > span,
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+  border-radius: unset;
+}
+
+.job--item {
+  margin-bottom: 5px;
+}
+.job--item__sub:hover {
+  background-color: #f0f0f0;
+}
+.job--item__sub {
+  cursor: pointer;
+}

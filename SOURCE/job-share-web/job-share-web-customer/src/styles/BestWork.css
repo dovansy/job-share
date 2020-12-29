@@ -1,0 +1,14 @@
+.header--modal {
+  color: white;
+  background-color: #333;
+  border-radius: 3px;
+}
+.header__title {
+  font-size: 20px;
+  margin-top: 8px;
+  align-items: center;
+}
+.seemore {
+  color: white;
+  margin-top: 10px;
+}

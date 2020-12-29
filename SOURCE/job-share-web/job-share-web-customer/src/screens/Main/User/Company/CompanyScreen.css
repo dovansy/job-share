@@ -1,0 +1,109 @@
+.box-search-top-list {
+  background-color: #21303f;
+  /* background-image: url(../../../../assets/search_company_bg.webp); */
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+}
+
+.box-form-search-top-list h1 {
+  padding: 15px 20px 0;
+  font-size: 18px;
+  color: #fff;
+}
+
+.box-search-top-list .box-form-search-top-list {
+  /* background-color: rgba(51, 51, 51, 0.6); */
+  margin-left: 20vh;
+  margin-right: 20vh;
+}
+
+.input-search-top-list #btn-search-top-list {
+  height: 40px;
+  font-size: 16px;
+}
+.btn-company-primary {
+  background-color: #00b14f !important;
+  color: #fff !important;
+}
+
+.input-search-top-list .input-data #keyword {
+  padding-left: 45px !important;
+}
+
+@media only screen and (max-width: 992px) {
+  .box-form-search-top-list {
+    max-width: 1100px;
+    margin-left: 0;
+  }
+  .company-content {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .box-form-search-top-list {
+    width: 900px;
+    margin-left: -10;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .box-form-search-top-list {
+    width: 690px;
+    margin-left: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .box-form-search-top-list {
+    /* width: 550px; */
+    /* margin-left: 0 !important; */
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .box-form-search-top-list {
+    width: 450px;
+    margin-left: 0 !important;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .box-form-search-top-list {
+    width: 340px;
+    margin-left: 0 !important;
+  }
+}
+.company-content {
+  margin-right: -100px;
+  margin-left: 100px;
+}
+.company-des {
+  padding: 0 15px;
+  height: 100px;
+  font-size: 13px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.company-info .col-title {
+  font-size: 15px;
+}
+
+.text-highlight {
+  color: #00b14f !important;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.company-info .company-logo {
+  width: 75px;
+}
+
+.company-item:hover {
+  box-shadow: 5px 7px 10px gray !important;
+}
+
+.review-btn:hover {
+  opacity: 0.9;
+}
+.review-btn {
+  font-weight: 500;
+}

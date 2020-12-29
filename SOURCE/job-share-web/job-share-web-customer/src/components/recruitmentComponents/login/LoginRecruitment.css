@@ -1,0 +1,56 @@
+.hover-link {
+  color: #888;
+  font-size: 0.9em;
+  text-decoration: none !important;
+}
+.hover-link:hover {
+  color: #c60710 !important;
+}
+a {
+  color: #000;
+}
+a {
+  color: #337ab7;
+  text-decoration: none;
+}
+a {
+  background-color: transparent;
+}
+.panel-default .panel-heading {
+  border-color: #e4e4e4;
+}
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+#page-login .panel {
+  margin: 40px 60px;
+}
+#page-login .panel .panel-body {
+  padding: 40px 30px 20px;
+}
+.panel {
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.btn-primaryy {
+  background-color: #c60710 !important;
+  border: none !important;
+  text-transform: none;
+  color: white !important;
+}
+.btn1 {
+  border-radius: 0 !important;
+  padding: 8px 14px;
+  font-size: 14px;
+}
+.form-group {
+  margin-bottom: 20px;
+}

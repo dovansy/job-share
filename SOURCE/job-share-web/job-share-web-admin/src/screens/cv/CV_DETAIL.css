@@ -1,0 +1,239 @@
+#cvo-document-root {
+  margin: 0 auto;
+  padding: 0;
+  font-size: 12pt;
+}
+
+.cvo-document {
+  font-family: arial, sans-serif, tahoma;
+  font-size: 10pt;
+  color: #000;
+  width: 100%;
+}
+
+.cvo-document .cvo-page {
+  padding: 15mm;
+  margin: 0 auto;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+  position: relative;
+  width: 210mm;
+  min-height: 260mm;
+}
+
+.cvo-document .cvo-subpage {
+  padding: 5mm;
+  min-height: 200mm;
+}
+
+.cvo-document #cvo-profile {
+  padding-top: 3mm;
+}
+.cvo-document .cvo-block {
+  padding-bottom: 0.7cm;
+  padding-left: 4mm;
+  padding-right: 4mm;
+}
+
+.cvo-document #cvo-profile table {
+  margin: 0;
+  border-collapse: collapse;
+  width: 100%;
+  border-spacing: 0;
+}
+.cvo-document #cvo-profile td.avatar-wraper {
+  width: 4.2cm;
+  min-height: 4.2cm;
+  vertical-align: top;
+}
+.cvo-document #cvo-profile th,
+.cvo-document #cvo-profile td {
+  padding: 0.1cm;
+  line-height: 14pt;
+}
+
+.cvo-document #cvo-profile-fullname {
+  display: block;
+  font-size: 24pt;
+  line-height: 24pt;
+  font-weight: 700;
+  color: #0e2452;
+  text-transform: capitalize;
+}
+
+/* .default_min_width {
+  min-width: 25pt;
+} */
+
+.cvo-document #cvo-profile-avatar {
+  border: 0;
+  width: 3cm;
+  height: auto;
+  margin: 0 auto;
+}
+[cvo-form-field] {
+  cursor: text;
+}
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
+}
+
+.cvo-document #cvo-profile-title {
+  display: block;
+  font-size: 11pt;
+  line-height: 12pt;
+  color: #000050;
+}
+
+.cvo-document #cvo-profile th,
+.cvo-document #cvo-profile td {
+  padding: 0.1cm;
+  line-height: 14pt;
+  vertical-align: middle;
+}
+
+.cvo-document #cvo-profile span.profile-label {
+  display: inline-block;
+  width: 2.8cm;
+  font-weight: 700;
+  font-style: normal;
+  vertical-align: top;
+}
+
+.cvo-document .cvo-block-title {
+  color: #000;
+  font-size: 12pt;
+  line-height: 18pt;
+  margin-bottom: 5pt;
+  border-bottom: 1pt solid #333;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.cvo-document .cvo-block-title span {
+  width: 100%;
+}
+.cvo-document .cvo-block-body {
+  padding-top: 0.2cm;
+}
+.cvo-document #cvo-objective-objective {
+  display: block;
+  line-height: 15pt;
+  min-width: 12cm;
+  text-align: justify;
+}
+
+.cvo-document #education-table .row {
+  border-bottom: 0.05cm solid #eee;
+  line-height: 15pt;
+  padding: 0.15cm 0;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+.cvo-document #education-table {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 0.2cm;
+}
+.cvo-document #education-table .cvo-education-time {
+  padding: 1mm 0;
+  width: 5cm;
+  float: left;
+}
+.start,
+.end {
+  min-width: 30px;
+  display: inline-block;
+}
+.cvo-document #education-table .school {
+  width: 11cm;
+  float: left;
+}
+.cvo-document #education-table .cvo-education-school {
+  font-weight: 700;
+  min-width: 5cm;
+  display: block;
+}
+.cvo-document #education-table .cvo-education-name,
+.cvo-document #education-table .cvo-education-title,
+.cvo-document #education-table .cvo-education-details {
+  min-width: 5cm;
+  display: block;
+}
+
+.cvo-document #experience-table {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 0.2cm;
+}
+.cvo-document #experience-table {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 0.2cm;
+}
+.cvo-document #experience-table .row {
+  border-bottom: 0.05cm solid #eee;
+  line-height: 15pt;
+  padding: 0.15cm 0;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+.cvo-document #experience-table .cvo-experience-time {
+  padding: 1mm 0;
+  width: 5cm;
+  float: left;
+}
+.cvo-document #experience-table .cvo-experience-company {
+  font-weight: 700;
+  min-width: 5cm;
+  display: block;
+}
+.cvo-document #experience-table .cvo-experience-position,
+.cvo-document #experience-table .cvo-experience-details {
+  min-width: 5cm;
+  display: block;
+}
+
+.cvo-document #experience-table .company {
+  width: 11cm;
+  padding: 1pt;
+  float: left;
+}
+
+.input {
+  resize: horizontal;
+  width: 9cm;
+  border: none !important;
+}
+.input-des {
+  resize: none !important;
+  border: none !important;
+}
+.input:focus {
+  outline: 1px dashed lightgray !important;
+}
+.input-des:focus {
+  outline: 1px dashed lightgray !important;
+}
+
+.fullName {
+  text-transform: capitalize;
+}
+
+.input-time {
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 1.3cm;
+  border: none !important;
+}
+.input-time:focus {
+  outline: 1px dashed lightgray !important;
+}
+.action-cv {
+  cursor: pointer;
+}
+.action-cv:hover {
+  color: red;
+  font-weight: bold;
+}

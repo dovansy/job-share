@@ -1,0 +1,11 @@
+/* .table--box {
+  box-shadow: 3px 3px 10px 5px rgb(230, 230, 230);
+} */
+/* .table--header__box {
+  background-color: rgb(214, 214, 214);
+  border-radius: 5px;
+} */
+
+.table-hover tbody tr:hover {
+  background-color: rgb(73, 132, 160, 0.5) !important;
+}

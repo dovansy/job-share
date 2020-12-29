@@ -1,0 +1,1245 @@
+{
+	"info": {
+		"_postman_id": "41737e45-2e68-4206-b504-93a199be9fb0",
+		"name": "JOB _SHARE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "createUser",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"chiendv\",\r\n  \"password\": \"Chien12\",\r\n  \"name\": \"Duong Van Vien\",\r\n  \"bio\": \"react Dev\",\r\n  \"position\": {\r\n    \"id\": 1,\r\n    \"position\": \"fresher reactjs\"\r\n  },\r\n  \"education_id\": 1,\r\n  \"company_id\": 1, \r\n  \"date_of_birth\": \"2000-09-12\",\r\n  \"gender\": 0,\r\n  \"address\": \"Ha noi\",\r\n  \"phone_number\": \"093542856\",\r\n  \"email\": \"tiendv@gmail.com\",\r\n  \"description\": \"dep zai\",\r\n  \"avatar\": \"https://www.google.com/imgres?imgurl=https%3A%2F%2Fimages.squarespace-cdn.com%2Fcontent%2Fv1%2F5a5906400abd0406785519dd%2F1552662149940-G6MMFW3JC2J61UBPROJ5%2Fke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw%2Fbaelen.jpg%3Fformat%3D1500w&imgrefurl=https%3A%2F%2Fwww.coralreefimagebank.org%2F&tbnid=WyxjrzlniHuInM&vet=12ahUKEwirjbyn0PnrAhUFAJQKHWdXCvQQMygEegUIARCrAQ..i&docid=JVwoC5AykjcOUM&w=1500&h=1000&q=image&ved=2ahUKEwirjbyn0PnrAhUFAJQKHWdXCvQQMygEegUIARCrAQ\",\r\n  \"cover\": \"https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn.jpegmini.com%2Fuser%2Fimages%2Fslider_puffin_jpegmini_mobile.jpg&imgrefurl=https%3A%2F%2Fwww.jpegmini.com%2F&tbnid=G1_Vs888uiu6-M&vet=12ahUKEwirjbyn0PnrAhUFAJQKHWdXCvQQMygHegUIARCxAQ..i&docid=2DOK0HM4QCJg-M&w=800&h=800&q=image&ved=2ahUKEwirjbyn0PnrAhUFAJQKHWdXCvQQMygHegUIARCxAQ\",\r\n  \"url\": \"https://www.topcv.vn/p/do-van-tien-2977095\",\r\n  \"role_id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}users/createUser",
+							"host": [
+								"{{local}}users"
+							],
+							"path": [
+								"createUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getUserInfo",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}users/getUserInfo?user_id=2",
+							"host": [
+								"{{local}}users"
+							],
+							"path": [
+								"getUserInfo"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateUser",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_id\": 1,\r\n    \"name\": \"Do van tien\",\r\n    \"bio\": \"react Dev\",\r\n    \"position\": {\r\n        \"id\": 1,\r\n        \"position\": \"fresher reactjs\"\r\n    },\r\n    \"education_id\": 1,\r\n    \"company_id\": 1,\r\n    \"date_of_birth\": \"2000-09-12\",\r\n    \"gender\": 0,\r\n    \"address\": \"Ha noi\",\r\n    \"phone_number\": \"093542856\",\r\n    \"email\": \"tiendv@gmail.com\",\r\n    \"description\": \"dep zai\",\r\n    \"avatar\": \"https://www.google.com/imgres?imgurl=https%3A%2F%2Fimages.squarespace-cdn.com%2Fcontent%2Fv1%2F5a5906400abd0406785519dd%2F1552662149940-G6MMFW3JC2J61UBPROJ5%2Fke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw%2Fbaelen.jpg%3Fformat%3D1500w&imgrefurl=https%3A%2F%2Fwww.coralreefimagebank.org%2F&tbnid=WyxjrzlniHuInM&vet=12ahUKEwirjbyn0PnrAhUFAJQKHWdXCvQQMygEegUIARCrAQ..i&docid=JVwoC5AykjcOUM&w=1500&h=1000&q=image&ved=2ahUKEwirjbyn0PnrAhUFAJQKHWdXCvQQMygEegUIARCrAQ\",\r\n    \"cover\": \"https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn.jpegmini.com%2Fuser%2Fimages%2Fslider_puffin_jpegmini_mobile.jpg&imgrefurl=https%3A%2F%2Fwww.jpegmini.com%2F&tbnid=G1_Vs888uiu6-M&vet=12ahUKEwirjbyn0PnrAhUFAJQKHWdXCvQQMygHegUIARCxAQ..i&docid=2DOK0HM4QCJg-M&w=800&h=800&q=image&ved=2ahUKEwirjbyn0PnrAhUFAJQKHWdXCvQQMygHegUIARCxAQ\",\r\n    \"url\": \"https://www.topcv.vn/p/do-van-tien-2977095\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}users/updateUser",
+							"host": [
+								"{{local}}users"
+							],
+							"path": [
+								"updateUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "changePassword",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"user_id\": 1,\r\n  \"password\": \"Tiendv12\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}users/changePassword",
+							"host": [
+								"{{local}}users"
+							],
+							"path": [
+								"changePassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"tiendv\",\r\n  \"password\": \"Tien12\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}users/login",
+							"host": [
+								"{{local}}users"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"user_id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}users/deleteUser",
+							"host": [
+								"{{local}}users"
+							],
+							"path": [
+								"deleteUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getListUser",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}users/getListUser",
+							"host": [
+								"{{local}}users"
+							],
+							"path": [
+								"getListUser"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Education",
+			"item": [
+				{
+					"name": "createEducation",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"university_id\": 1,\r\n  \"major\": \"CNTT\",\r\n  \"status\": 1,\r\n  \"start_time\": \"2018-6-12\",\r\n  \"end_time\": \"2023-5-6\",\r\n  \"description\": \"Đang theo học\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}education/createEducation",
+							"host": [
+								"{{local}}education"
+							],
+							"path": [
+								"createEducation"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateEducation",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"education_id\": 1,\r\n    \"university_id\": 1,\r\n    \"major\": \"CNTT\",\r\n    \"status\": 1,\r\n    \"start_time\": \"2018-6-12\",\r\n    \"end_time\": \"2023-5-6\",\r\n    \"description\": \"Đang theo học\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}education/updateEducation",
+							"host": [
+								"{{local}}education"
+							],
+							"path": [
+								"updateEducation"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteEducation",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"education_id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}education/deleteEducation",
+							"host": [
+								"{{local}}education"
+							],
+							"path": [
+								"deleteEducation"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getListEducation",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}education/getListEducation",
+							"host": [
+								"{{local}}education"
+							],
+							"path": [
+								"getListEducation"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Experience",
+			"item": [
+				{
+					"name": "createExperience",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"company_id\": 1,\r\n    \"position\": \"CNTT\",\r\n    \"status\": 1,\r\n    \"start_time\": \"2018-6-12\",\r\n    \"end_time\": \"2023-5-6\",\r\n    \"description\": \"Đang theo học\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}experience/createExperience",
+							"host": [
+								"{{local}}experience"
+							],
+							"path": [
+								"createExperience"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateExperience",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"experience_id\": 1,\r\n    \"company_id\": 1,\r\n    \"position\": \"CNTT\",\r\n    \"status\": 1,\r\n    \"start_time\": \"2018-6-12\",\r\n    \"end_time\": \"2023-5-6\",\r\n    \"description\": \"Đang theo học\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}experience/updateExperience",
+							"host": [
+								"{{local}}experience"
+							],
+							"path": [
+								"updateExperience"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteExperience",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"experience_id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}experience/deleteExperience",
+							"host": [
+								"{{local}}experience"
+							],
+							"path": [
+								"deleteExperience"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getListExperience",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}education/getListEducation",
+							"host": [
+								"{{local}}education"
+							],
+							"path": [
+								"getListEducation"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Skill",
+			"item": [
+				{
+					"name": "createSkill",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"type\": 1,\r\n  \"rating\": 5,\r\n  \"description\": \"Đang theo học\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}skill/createSkill",
+							"host": [
+								"{{local}}skill"
+							],
+							"path": [
+								"createSkill"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateSkill",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"skill_id\": 1,\r\n    \"type\": 1,\r\n    \"rating\": 5,\r\n    \"description\": \"Đang theo học\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}skill/updateSkill",
+							"host": [
+								"{{local}}skill"
+							],
+							"path": [
+								"updateSkill"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteSkill",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"skill_id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}skill/deleteSkill",
+							"host": [
+								"{{local}}skill"
+							],
+							"path": [
+								"deleteSkill"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getListSkill",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}skill/getListSkill",
+							"host": [
+								"{{local}}skill"
+							],
+							"path": [
+								"getListSkill"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Certification",
+			"item": [
+				{
+					"name": "createCertification",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"certification_name\": \"toiec\",\r\n    \"organization\": \"FBI\",\r\n    \"status\": 1,\r\n    \"start_time\": \"2018-2-5\",\r\n    \"end_time\": \"2022-3-10\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}certification/createCertification",
+							"host": [
+								"{{local}}certification"
+							],
+							"path": [
+								"createCertification"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateCertification",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"certification_id\": 1,\r\n    \"certification_name\": \"toiec\",\r\n    \"organization\": \"FBI\",\r\n    \"status\": 1,\r\n    \"start_time\": \"2018-2-5\",\r\n    \"end_time\": \"2022-3-10\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}certification/updateCertification",
+							"host": [
+								"{{local}}certification"
+							],
+							"path": [
+								"updateCertification"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteCertification",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"certification_id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}certification/deleteCertification",
+							"host": [
+								"{{local}}certification"
+							],
+							"path": [
+								"deleteCertification"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getListCertification",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}certification/getListCertification",
+							"host": [
+								"{{local}}certification"
+							],
+							"path": [
+								"getListCertification"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Award",
+			"item": [
+				{
+					"name": "createAward",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"award_name\": \"Vô địch c1\",\r\n    \"organization\": \"UEFA\",\r\n    \"time\": \"2018-10-24\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}award/createAward",
+							"host": [
+								"{{local}}award"
+							],
+							"path": [
+								"createAward"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateAward",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"award_id\": 1,\r\n    \"award_name\": \"Vô địch c1\",\r\n    \"organization\": \"UEFA\",\r\n    \"time\": \"2018-10-24\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}award/updateAward",
+							"host": [
+								"{{local}}award"
+							],
+							"path": [
+								"updateAward"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteAward",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"award_id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}award/deleteAward",
+							"host": [
+								"{{local}}award"
+							],
+							"path": [
+								"deleteAward"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getListAward",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}award/getListAward",
+							"host": [
+								"{{local}}award"
+							],
+							"path": [
+								"getListAward"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Course",
+			"item": [
+				{
+					"name": "createCourse",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"course_name\": \"Java basic\",\r\n    \"organization\": \"CoderX\",\r\n    \"start_time\": \"2020-10-2\",\r\n    \"end_time\": \"2020-11-4\",\r\n    \"description\": \"Java basic\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}course/createCourse",
+							"host": [
+								"{{local}}course"
+							],
+							"path": [
+								"createCourse"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateCourse",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"course_id\": 1,\r\n    \"course_name\": \"Java basic\",\r\n    \"organization\": \"CoderX\",\r\n    \"start_time\": \"2020-10-2\",\r\n    \"end_time\": \"2020-11-4\",\r\n    \"description\": \"Java basic\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}course/updateCourse",
+							"host": [
+								"{{local}}course"
+							],
+							"path": [
+								"updateCourse"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteCourse",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"course_id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}course/deleteCourse",
+							"host": [
+								"{{local}}course"
+							],
+							"path": [
+								"deleteCourse"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getListCourse",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}course/getListCourse",
+							"host": [
+								"{{local}}course"
+							],
+							"path": [
+								"getListCourse"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Project",
+			"item": [
+				{
+					"name": "createProject",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"project_name\": \"Job Share\",\r\n    \"partner\": \"Mọi người\",\r\n    \"number_of_project\": 5,\r\n    \"position\": \"dev\",\r\n    \"mission\": \"Chia sẻ việc làm\",\r\n    \"technology\": \"ReactJs + NodeJs + Mysql\",\r\n    \"status\": 1,\r\n    \"start_time\": \"2020-9-18\",\r\n    \"end_time\": \"2020-11-20\",\r\n    \"description\": \"kết nối người tuyển dụng với người tìm việc\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}project/createProject",
+							"host": [
+								"{{local}}project"
+							],
+							"path": [
+								"createProject"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateProject",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"project_id\": 1,\r\n    \"project_name\": \"Job Share\",\r\n    \"partner\": \"Mọi người\",\r\n    \"number_of_project\": 5,\r\n    \"position\": \"dev\",\r\n    \"mission\": \"Chia sẻ việc làm\",\r\n    \"technology\": \"ReactJs + NodeJs + Mysql\",\r\n    \"status\": 1,\r\n    \"start_time\": \"2020-9-18\",\r\n    \"end_time\": \"2020-11-20\",\r\n    \"description\": \"kết nối người tuyển dụng với người tìm việc\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}project/updateProject",
+							"host": [
+								"{{local}}project"
+							],
+							"path": [
+								"updateProject"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteProject",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"project_id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}project/deleteProject",
+							"host": [
+								"{{local}}project"
+							],
+							"path": [
+								"deleteProject"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getListProject",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}project/getListProject",
+							"host": [
+								"{{local}}project"
+							],
+							"path": [
+								"getListProject"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "createProject",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product_name\": \"Job Share\",\r\n    \"type\": \"ReactJs + NodeJs + Mysql\",\r\n    \"time_completed\": \"2020-11-20\",\r\n    \"description\": \"Teamwork\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}product/createProduct",
+							"host": [
+								"{{local}}product"
+							],
+							"path": [
+								"createProduct"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateProject",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product_id\": 1,\r\n    \"product_name\": \"Job Share\",\r\n    \"type\": \"ReactJs + NodeJs + Mysql\",\r\n    \"time_completed\": \"2020-11-20\",\r\n    \"description\": \"Teamwork\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}product/updateProduct",
+							"host": [
+								"{{local}}product"
+							],
+							"path": [
+								"updateProduct"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteProject",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"product_id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}product/deleteProduct",
+							"host": [
+								"{{local}}product"
+							],
+							"path": [
+								"deleteProduct"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getListProject",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}product/getListProduct",
+							"host": [
+								"{{local}}product"
+							],
+							"path": [
+								"getListProduct"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Volunteer",
+			"item": [
+				{
+					"name": "createVolunteer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"organization\": \"WS\",\r\n    \"position\": \"Nhà tài trợ\",\r\n    \"status\": 1,\r\n    \"start_time\": \"2020-5-29\",\r\n    \"end_time\": \"\",\r\n    \"description\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}volunteer/createVolunteer",
+							"host": [
+								"{{local}}volunteer"
+							],
+							"path": [
+								"createVolunteer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateVolunteer",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"volunteer_id\": 1,\r\n    \"organization\": \"WS\",\r\n    \"position\": \"Nhà tài trợ\",\r\n    \"status\": 1,\r\n    \"start_time\": \"2020-5-29\",\r\n    \"end_time\": \"\",\r\n    \"description\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}volunteer/updateVolunteer",
+							"host": [
+								"{{local}}volunteer"
+							],
+							"path": [
+								"updateVolunteer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteVolunteer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"volunteer_id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}volunteer/deleteVolunteer",
+							"host": [
+								"{{local}}volunteer"
+							],
+							"path": [
+								"deleteVolunteer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getListVolunteer",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}volunteer/getListVolunteer",
+							"host": [
+								"{{local}}volunteer"
+							],
+							"path": [
+								"getListVolunteer"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
